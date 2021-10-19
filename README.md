@@ -11,6 +11,8 @@
 * Install postgres server for mac (pgAdmin4)
 * install pip3 in pycharm to download supporting libraries
 * pip install other supporting libraries such as pandas for reading files, xml.etree.cElementTree for xml files AND psycopg2 for connecting to the postgres server.
+* Download zipped data folder from the below drive link. Unzip it and copy data folder in the project.
+https://drive.google.com/file/d/1BYHNLOB2F6eVCQy5w66me5t8uIuVRXP5/view?usp=sharing
 
 
 **Download data files from the links given**
