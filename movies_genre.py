@@ -7,7 +7,7 @@ cur = conn.cursor()
 
 cur.execute("CREATE TABLE IF NOT EXISTS genres( id text,name text)")
 conn.commit()
-data = pd.read_csv('/Data/movies_metadata.csv', dtype='unicode')
+data = pd.read_csv('Data/movies_metadata.csv', dtype='unicode')
 collec = data['genres']
 
 query = """Insert into genres(id,name) values(%s,%s)"""

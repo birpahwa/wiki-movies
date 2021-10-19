@@ -7,7 +7,7 @@ cur = conn.cursor()
 
 cur.execute("CREATE TABLE IF NOT EXISTS movies_production_countries( iso_3166_1 text,name text)")
 conn.commit()
-data = pd.read_csv('/Users/birparkash/PycharmProjects/DevOn/Data/movies_metadata.csv', dtype='unicode')
+data = pd.read_csv('Data/movies_metadata.csv', dtype='unicode')
 collec = data['production_countries']
 #print(collec)
 

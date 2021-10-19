@@ -12,7 +12,7 @@ cur.execute("CREATE TABLE IF NOT EXISTS wikidata( title text,url text,abstract t
 conn.commit()
 
 # Get the list of all files and directories
-path = "/Users/birparkash/Downloads/wikiXml"
+path = "Data/splitxml"
 dir_list = os.listdir(path)
 
 print("Files and directories in '", path, "' :")
@@ -23,7 +23,7 @@ print(dir_list)
 # parsing xml file using Element tree and adding it in a list
 for n in dir_list:
     if n.startswith("x"):
-        file_path = """/Users/birparkash/Downloads/wikiXml/%s"""%(n)
+        file_path = """Data/splitxml/%s"""%(n)
         print(file_path)
         tree = ET.parse(file_path)
 

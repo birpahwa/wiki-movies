@@ -13,7 +13,7 @@ conn.commit()
 #fetching data from csv and transforming it and putting it back to the csv
 
 
-data = pd.read_csv('/Data/keywords.csv')
+data = pd.read_csv('Data/keywords.csv')
 keyword=data['keywords']
 #first_row = data.iloc[0]
 #print(first_row)

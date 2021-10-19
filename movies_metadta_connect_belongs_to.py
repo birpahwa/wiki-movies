@@ -9,7 +9,7 @@ cur = conn.cursor()
 cur.execute("CREATE TABLE IF NOT EXISTS movies_connects_belongs_to_collection( movie_id text,belong_to_collection_id text)")
 conn.commit()
 
-data = pd.read_csv('/Users/birparkash/PycharmProjects/DevOn/Data/movies_metadata.csv', dtype='unicode')
+data = pd.read_csv('Data/movies_metadata.csv', dtype='unicode')
 collec = data['belongs_to_collection']
 #print((collec))
 query = """Insert into movies_connects_belongs_to_collection(movie_id,belong_to_collection_id) values(%s,%s)"""

@@ -11,7 +11,7 @@ conn.commit()
 #fetching data from csv and transforming it and putting it back to the csv
 
 
-data = pd.read_csv('/Data/credits.csv')
+data = pd.read_csv('Data/credits.csv')
 crew = data['crew']
 #print(cast[0].get('cast_id'))
 

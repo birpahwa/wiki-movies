@@ -7,7 +7,7 @@ cur = conn.cursor()
 
 cur.execute("CREATE TABLE IF NOT EXISTS movies_connect_production_companies( production_company_id text,movie_id text)")
 conn.commit()
-data = pd.read_csv('/Users/birparkash/PycharmProjects/DevOn/Data/movies_metadata.csv', dtype='unicode')
+data = pd.read_csv('Data/movies_metadata.csv', dtype='unicode')
 collec = data['production_companies']
 #print(collec)
 
